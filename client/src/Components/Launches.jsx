@@ -14,14 +14,10 @@ const LAUNCHES_QUERY = gql`
     }
 `;
 class Launches extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  };
-    }
     render() {
         return (
             <Fragment>
-                <h2 className='display-4 my-0'>LAUNCHES</h2>
+                <h3 className='display-0 my-5'>LAUNCHES</h3>
                 <Query query={LAUNCHES_QUERY}>
                 {
                     ({loading,error,data})=>{

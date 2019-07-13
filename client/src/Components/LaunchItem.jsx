@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function LaunchItem({launch: { flight_number, mission_name, launch_date_local, launch_success}}){
     return (
@@ -9,8 +10,8 @@ export default function LaunchItem({launch: { flight_number, mission_name, launc
                     <p>Date: {launch_date_local}</p>
                 </div>
                 <div className="col-md-3">
-                    
-                    <button className="btn btn-secondary">Launch Details</button>
+
+                    <Link to={`/launch/${flight_number}`} className="btn btn-secondary">Launch Details</Link>
                 </div>
             </div>
         </div>
