@@ -1,3 +1,19 @@
+## Notes
+If you worked with express , you definetly build the routes for the frontend but in case of Graphql you just need one end point which will provide the schema , schema where you design your query , mutation etc.
+
+graphiql is a tool from where anyone can test or run the query, it also provide the documentation 
+
+Design of the query Type
+create a new GraphqlType and pass the object in it which consist name of the queryType and the fields , fields is also a function which returns the things we want to return when we query it with their suitable types.
+
+RootQuery
+It is the query root , responsible for accepting query from outside and resolving it with the help of resolvers.
+
+To connect with the Apollo client with react
+just  install apollo boost, react-apollo import ApolloClient and ApolloProvider from it . Create a ApolloClient new install and pass the graphql server endPoint. Wrap the Container within ApolloProvider Component so that you can use graphql client anywhere in the application.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +82,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
